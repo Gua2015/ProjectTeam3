@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/label_first"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name"/>
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/label_first"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@+id/label_first"
+        android:hint="John"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/label_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_first"
+        android:layout_marginTop="50dp"
+        android:text="Last Name" />
+
+    <EditText
+        android:id="@+id/input_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/input_name"
+        android:layout_alignBottom="@+id/label_last"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/label_last"
+        android:hint="Smith" />
+    <TextView
+        android:id="@+id/label_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_last"
+        android:layout_marginTop="50dp"
+        android:text="Status" />
+
+    <EditText
+        android:id="@+id/input_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/input_last"
+        android:layout_alignBottom="@+id/label_status"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/label_status"
+        android:hint="Present / Absent" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/label_status"
+        android:layout_marginTop="50dp"
+        android:onClick="insert"
+        android:text="ADD" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_add"
+        android:layout_marginTop="55dp"
+        android:onClick="goBack"
+        android:text="back" />
+</RelativeLayout>

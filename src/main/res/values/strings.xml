@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GroupProjectApp</string>
+    <string name="student">Student</string>
+    <string name="instructor">Instructor</string>
+</resources>
